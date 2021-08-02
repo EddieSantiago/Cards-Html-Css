@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+html{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Estilos Cards */
+
+.cards{
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card{
+	width: 300px;
+	height: 580px;
+	background: white;
+	margin: 10px;
+	border: black 2px solid;
+	border-radius: 20px;
+}
+
+.profile{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+.title{
+	color: gray;
+	text-align: center;
+	font-size: 22px;
+}
+
+.social #youtube, .social #twitter, .social #github{
+	margin: 10px;
+	font-size: 18px;
+	color: black;
+}
+
+.social #youtube:hover{
+	color: red;
+	transition: all .5s;
+}
+
+.social #twitter:hover{
+	color: lightblue;
+	transition: all .5s;
+}
+
+.social #github:hover{
+	color: black;
+	transition: all .5s;
+}
+
+.description{
+	color: black;
+	text-align: center;
+	font-size: 16px;
+}
+
+.button_card{
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px;
+	margin-top: 10px;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+}
+
+.button_card:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+
+/* Responsive */
+
+@media (max-width: 414px){
+	.social #youtube, .social #twitter, .social #github{
+	font-size: 22px;
+}
+.title{
+	font-size: 25px;
+}
+.card{
+	height: 600px;
+}
+.button_card{
+	font-size: 22px;
+}
+}
+
+@media (max-width: 280px){
+	.card{
+		height: 640px;
+	}
+}
